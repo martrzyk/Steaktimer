@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    style="@style/PanelView">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/textViewDocumentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            style="@style/DetailsInfoMain"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDocumentName" >
+
+            <TextView
+                android:id="@+id/buttonDownloadCancelDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:ems="5"
+                android:text="DOWNLOAD"
+                style="@style/ListItemHeadline" />
+
+            <ProgressBar
+                android:id="@+id/progressBarDownloadDocument"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/buttonDownloadCancelDocument" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

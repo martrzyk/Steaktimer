@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_mainLayout_logged"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <include
+        layout="@layout/logo_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo_top_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/textViewProfile"
+                style="@style/headLinesItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/profile"/>
+
+            <TextView
+                android:id="@+id/textViewEdit"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textViewProfile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/edit"/>
+
+            <TextView
+                android:id="@+id/textViewSave"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textViewProfile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:animateLayoutChanges="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/save"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewLogOut"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textViewProfile"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/log_out"/>
+
+            <TextView
+                android:id="@+id/textViewCancel"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textViewProfile"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/cancel"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/baseData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProfile"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <com.comarch.conference.main.views.CustomEditText
+                        android:id="@+id/textAccountNameParticipant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:maxLength="250"/>
+
+                    <TextView
+                        android:id="@+id/buttonChangePassword"
+                        style="@style/DetailsInfoMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/textAccountNameParticipant"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/password_change"
+                        android:visibility="gone"/>
+
+                    <com.comarch.conference.main.views.CustomEditText
+                        android:id="@+id/textAccountSurnameParticipant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/buttonChangePassword"
+                        android:clickable="false"
+                        android:ems="10"
+                        android:hint="@string/surname"
+                        android:inputType="textPersonName"
+                        android:maxLength="250"
+                        android:textColor="#000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountEmailParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/baseData"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="250"
+                android:textColor="#000"/>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountPositionParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountEmailParticipant"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/position"
+                android:inputType="text"
+                android:maxLength="250"
+                android:textColor="#000"/>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountCompanyParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountPositionParticipant"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/company"
+                android:inputType="text"
+                android:maxLength="250"
+                android:textColor="#000"/>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountFacebookParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountCompanyParticipant"
+                android:animateLayoutChanges="true"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/facebook"
+                android:inputType="text"
+                android:maxLength="250"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                style="@style/DetailsInfoMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountCompanyParticipant"
+                android:layout_marginTop="10dp"
+                android:text="@string/register_question"/>
+
+            <EditText
+                android:id="@+id/editTextParticipantQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewQuestion"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLength="500"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewParticipantQuestion"
+                style="@style/DetailsInfoSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextParticipantQuestion"
+                android:text="@string/question_addon"/>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewEdit"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

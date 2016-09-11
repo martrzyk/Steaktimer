@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favoriteFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/top_padding_withDates"  >
+    
+    <LinearLayout
+        android:id="@+id/LinearLayoutDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.41"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/horizontalScrollDates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.59"
+            layout="@layout/date_scroll" />
+    </LinearLayout>
+    
+    <com.comarch.conference.event.EventsViewClock
+        android:id="@+id/eventsClock"
+        android:layout_below="@id/LinearLayoutDates"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@android:color/transparent"/>
+        
+
+</RelativeLayout>

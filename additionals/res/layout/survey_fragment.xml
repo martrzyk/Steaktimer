@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lighter_gray_background"
+                android:clickable="true"
+                android:paddingTop="@dimen/top_padding">
+
+    <RelativeLayout
+        android:id="@+id/survey_main_relative"
+        android:layout_width="match_parent"
+        android:background="@color/icons_primary"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/surveySave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/save"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/survey_main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/icons_primary"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/headerNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/headerDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Description"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/surveyQuestionListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

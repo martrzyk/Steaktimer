@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        style="@style/ListSection">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            style="@style/ListSectionHeader"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/event_on_list_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:duplicateParentState="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/headerLayout"
+            style="@style/PanelView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutEventPicture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewEventPicture"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp"
+                        android:src="@drawable/blank_contact"
+                        android:visibility="invisible"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressBarEventOnList"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="visible"/>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/frameLayoutEventPicture">
+
+                    <ImageView
+                        android:id="@+id/imageViewEventFavourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_favorite_white_36dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewEventTitle"
+                        style="@style/ListItemHeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/imageViewEventFavourite"
+                        android:paddingTop="5dp"
+                        android:text="Large Text"/>
+
+                    <TextView
+                        android:id="@+id/textViewEventSpeaker"
+                        style="@style/ListItemOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/textViewEventTitle"
+                        android:layout_alignStart="@id/textViewEventTitle"
+                        android:layout_below="@id/textViewEventTitle"
+                        android:text="Small Text"/>
+
+                    <TextView
+                        android:id="@+id/textViewEventPlace"
+                        style="@style/ListItemOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/textViewEventTitle"
+                        android:layout_alignStart="@id/textViewEventTitle"
+                        android:layout_below="@id/textViewEventSpeaker"
+                        android:text="Small Text"/>
+
+                    <TextView
+                        android:id="@+id/textViewEventTime"
+                        style="@style/ListItemMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/textViewEventTitle"
+                        android:layout_alignStart="@id/textViewEventTitle"
+                        android:layout_below="@id/textViewEventPlace"
+                        android:text="Small Text"/>
+
+                    <RelativeLayout
+                        android:id="@+id/textViewEventRateAvgLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/imageViewEventFavourite"
+                        android:gravity="center_horizontal"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/textViewEventRateListAvgIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white_36dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewEventRateListAvg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lighter_gray_background"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

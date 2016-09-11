@@ -1,0 +1,69 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    style="@style/PanelView"
+    android:clickable="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutEventPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:id="@+id/imageViewContactsPicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/abc_list_selector_background_transition_holo_dark"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progressBarContactsOnList"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/frameLayoutEventPicture" >
+
+            <TextView
+                android:id="@+id/textViewContactsName"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text" />
+
+            <TextView
+                android:id="@+id/textViewContactsPosition"
+                style="@style/ListItemOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewContactsName"
+                android:text="Large Text" />
+
+            <ImageView
+                android:id="@+id/imageViewContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_more_horiz_white_36dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

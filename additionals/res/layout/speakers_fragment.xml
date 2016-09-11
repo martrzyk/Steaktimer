@@ -1,0 +1,30 @@
+<RelativeLayout android:id="@+id/fragment_mainLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/top_padding">
+
+    <include layout="@layout/logo_top"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutAllSpeakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_padding_minusDates"
+        >
+        <GridView
+            android:id="@+id/gridViewSpeakers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:animateLayoutChanges="true"
+            android:gravity="center_horizontal"
+            android:numColumns="2"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:visibility="visible">
+        </GridView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

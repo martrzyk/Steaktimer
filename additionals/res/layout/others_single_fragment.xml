@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_mainLayout_logged"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_gray_background"
+    android:clickable="true">
+
+    <include layout="@layout/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageViewOthersRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/back_button_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/back_button_layout"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/request_meeting"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back_button_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:id="@+id/baseData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProfile"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:id="@+id/profile_picture"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressBarParticipantSingle"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <com.comarch.conference.main.views.CustomEditText
+                        android:id="@+id/textAccountNameParticipant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:maxLength="250"/>
+
+                    <com.comarch.conference.main.views.CustomEditText
+                        android:id="@+id/textAccountSurnameParticipant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:ems="10"
+                        android:hint="@string/surname"
+                        android:inputType="textPersonName"
+                        android:maxLength="250"
+                        android:textColor="#000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountPositionParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/baseData"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/position"
+                android:inputType="text"
+                android:maxLength="250"
+                android:textColor="#000"/>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountCompanyParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountPositionParticipant"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/company"
+                android:inputType="text"
+                android:maxLength="250"
+                android:textColor="#000"/>
+
+            <com.comarch.conference.main.views.CustomEditText
+                android:id="@+id/textAccountFacebookParticipant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAccountCompanyParticipant"
+                android:animateLayoutChanges="true"
+                android:clickable="false"
+                android:ems="10"
+                android:hint="@string/facebook"
+                android:inputType="text"
+                android:maxLength="250"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/fragment_mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_gray_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".main.fragment.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/back_button"/>
+
+        <TextView
+            android:id="@+id/textviewSingup"
+            style="@style/ListItemHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:text="@string/signup"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="#000"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/surname"
+            android:inputType="textPersonName"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffffff"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#000"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterPasswordSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/password_new_2"
+            android:inputType="textPassword"
+            android:textColor="#000"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/position"
+            android:inputType="text"
+            android:textColor="#000"/>
+
+        <com.comarch.conference.main.views.CustomEditText
+            android:id="@+id/editTextRegisterCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="@string/company"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textViewMandatoryInfo"
+            style="@style/ObligatoryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="@string/madatory_fields"/>
+
+        <LinearLayout
+            android:id="@+id/register_terms_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_terms_textview1"
+                style="@style/DetailsInfoMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_privacy_begining"/>
+
+            <TextView
+                android:id="@+id/register_terms_textview2"
+                style="@style/DetailsInfoMain"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_privacy"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            style="@style/DetailsInfoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_question"/>
+
+        <EditText
+            android:id="@+id/editTextParticipantQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLength="500"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewParticipantQuestion"
+            style="@style/DetailsInfoSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/question_addon"/>
+
+        <TextView
+            android:id="@+id/buttonRegisterOK"
+            style="@style/ListItemHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="30dp"
+            android:text="@string/signup"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarRegister"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,121 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    style="@style/PanelView">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/question_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/question_message_author_initials_frame"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/question_message_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rounded_tv"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/question_message_author_initials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="MK"
+                    android:textColor="@android:color/white"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/question_message_message"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="60dp"
+                android:layout_toEndOf="@id/question_message_author_initials_frame"
+                android:text="TEST"
+                android:autoLink="all" />
+
+            <TextView
+                android:id="@+id/question_message_author"
+                style="@style/ListItemMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_message_message"
+                android:layout_marginStart="10dp"
+                android:gravity="right"
+                android:text="author"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/question_message_author_initials_frame" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/answer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/question_layout">
+
+            <FrameLayout
+                android:id="@+id/answer_message_author_initials_frame"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/answer_message_author_initials_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rounded_tv"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/answer_message_author_initials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="MK"
+                    android:textColor="@android:color/white"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/answer_message_message"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:minHeight="60dp"
+                android:layout_toEndOf="@id/answer_message_author_initials_frame"
+                android:text="bardzo dlugi text"
+                android:autoLink="all" />
+
+            <TextView
+                android:id="@+id/answer_message_author"
+                style="@style/ListItemMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="author"
+                android:gravity="right"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/answer_message_author_initials_frame"
+                android:layout_below="@id/answer_message_message" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

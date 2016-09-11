@@ -1,0 +1,66 @@
+<RelativeLayout android:id="@+id/fragment_mainLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/logo_top"/>
+
+    <RelativeLayout
+        android:id="@+id/participantsMainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo_top_layout"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayoutAllParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ListView
+                android:id="@+id/listViewParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/ListView"
+                android:overScrollMode="never">
+            </ListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_data_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/pull_to_refresh_no_data_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/refresh"
+                />
+            <TextView
+                android:id="@+id/pull_to_refresh_no_data_tv"
+                android:layout_below="@id/pull_to_refresh_no_data_iv"
+                style="@style/headLinesItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="@string/no_data"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:layout_centerInParent="true"
+        layout="@layout/login_include"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+</RelativeLayout>

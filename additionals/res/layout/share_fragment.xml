@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/top_padding"
+              android:paddingTop="@dimen/top_padding">
+
+    <include layout="@layout/logo_top"/>
+
+    <LinearLayout
+        android:id="@+id/buttonOwnLoggedOut"
+        style="@style/ListItemHeadline"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_button"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            style="@style/LoginItemMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/login_to_play"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_icons_size"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageFacebook"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:src="@drawable/facebook_share"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/imageLinkedIn"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:src="@drawable/linkedin_share"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imageTwitter"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:src="@drawable/twitter_share"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewShareTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:background="@color/lighter_gray_background"
+            android:text="@string/conference_share"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textViewShareInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:textSize="11sp"
+                android:textColor="@android:color/black"
+                android:background="@color/lighter_gray_background"
+                android:text="@string/conference_share_choose_social"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/buttonFacebook"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:layout_margin="10dp"
+                android:backgroundTintMode="src_over"
+                android:background="@drawable/facebook_share"/>
+
+            <ImageButton
+                android:id="@+id/buttonTwitter"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:layout_margin="10dp"
+                android:background="@drawable/twitter_share"/>
+
+            <ImageButton
+                android:id="@+id/buttonLinkedIn"
+                android:layout_width="@dimen/share_icons_size"
+                android:layout_height="@dimen/share_icons_size"
+                android:layout_margin="10dp"
+                android:background="@drawable/linkedin_share"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

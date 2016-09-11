@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fragment_mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/top_padding">
+
+    <include layout="@layout/logo_top"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_top_layout"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/login_include" />
+
+            <LinearLayout
+                android:id="@+id/game_points_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/buttonReward"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_solid_button"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textViewReward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="8pt"
+                            android:textColor="@android:color/white"
+                            android:text="0"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewRewardTitle"
+                        style="@style/ListItemHeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/game_reward_points" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/buttonOwn"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/rounded_solid_button"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewOwn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="12pt"
+                            android:textColor="@android:color/white"
+                            android:text="0"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewOwnTitle"
+                        style="@style/ListItemHeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/game_own_points"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/buttonTop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rounded_solid_button"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textViewTop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="8pt"
+                            android:textColor="@android:color/white"
+                            android:text="0"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewTopTitle"
+                        style="@style/ListItemHeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/game_top_points" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewContestRules"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/game_points_layout"
+                android:layout_margin="10dp"
+                android:text="@string/game_rules" />
+
+            <LinearLayout
+                android:id="@+id/badgesContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewContestRules"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/black"/>
+                    <TextView
+                        android:id="@+id/textViewBadgesInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:textSize="11sp"
+                        android:textColor="@android:color/black"
+                        android:background="@color/lighter_gray_background"
+                        android:text="@string/badges_available"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/badgesListLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

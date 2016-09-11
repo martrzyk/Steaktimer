@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:id="@+id/fragment_mainLayout">
+
+    <LinearLayout
+        android:id="@+id/conference_searcher_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/conference_choose_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose conference"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"/>
+
+        <SearchView
+            android:id="@+id/conference_searcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:background="@android:color/white"
+            android:queryHint="@string/conference_search"
+            android:iconifiedByDefault="false">
+        </SearchView>
+
+        <TextView
+            android:id="@+id/conference_type_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conference type"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/conferences_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/we_found_nothing"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/conference_loading_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutConferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/conference_searcher_layout"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:id="@+id/conference_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            style="@style/ListView"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/splash_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/lighter_gray_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/beacon_anim"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

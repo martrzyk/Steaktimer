@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:duplicateParentState="true"
+        style="@style/PanelView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageViewSolutionPicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/blank_contact"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressBarSolution"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textViewSolutionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSolutionPicture"
+                android:layout_centerInParent="true"
+                android:layout_alignLeft="@id/imageViewSolutionPicture"
+                android:layout_alignRight="@id/imageViewSolutionPicture"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Small Text"
+                style="@style/ListItemHeadline"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lighter_gray_background"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close_button_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_cancel_black_36dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/close_button_error"
+                android:animateLayoutChanges="true"
+                android:text="@string/no_network"
+                android:textColor="@color/full_black"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/activity_error_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/full_black"/>
+    </LinearLayout>
+
+    <com.comarch.conference.main.views.ScrollableViewPager
+        android:id="@+id/conference_view_pager"
+        android:layout_width="match_parent"
+        android:layout_below="@id/activity_error"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/conference_right_button"
+        android:animateLayoutChanges="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conference_future"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:rotation="90"
+        android:background="@drawable/rounded_bottom_background"
+        android:textColor="@color/lighter_gray_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/conference_left_button"
+        android:animateLayoutChanges="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conference_past"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:rotation="270"
+        android:background="@drawable/rounded_bottom_background"
+        android:textColor="@color/lighter_gray_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

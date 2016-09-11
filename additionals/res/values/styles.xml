@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullHeightDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ListItemHeadline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="MenuIconsText">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuIconsButton">
+        <item name="android:layout_gravity">center</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="elevation">@dimen/elevation</item>
+        <item name="fabSize">mini</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="headLinesItems">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="LoginItemSecond">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+    <style name="LoginItemSecondSmall">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+
+    <style name="LoginItemMainSmallBold">
+        <item name="android:textSize">21sp</item>
+        <item name="android:background">@drawable/rounded_dialog_white_transparent_inside</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="LoginItemMainSmallBoldWithFrame">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+    </style>
+
+    <style name="LoginItemMain">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="LoginItemBlueSmall">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="BadgeItemTextMainItalica">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ListItemHeadlineMain">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="ListItemHeadlineSecond">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+
+    <style name="ListItemOthers">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="ListSection">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="ListSectionHeader">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SurveyDateTo">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+    <style name="ListItemMore">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="SurveyListDescription">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="DetailsInfoSecond">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+    <style name="ObligatoryInfo">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red_color</item>
+    </style>
+
+    <style name="DetailsInfoMain">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="DetailsCommentSecond">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+
+    <style name="DetailsCommentMain">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="FullHeightDialog2" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DatesTransparentBackgroundSecond">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DatesTransparentBackgroundWhiteBold">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DatesTransparentBackgroundBase">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:background">@drawable/rounded_dialog_main_transparent_inside</item>
+    </style>
+
+    <style name="DatesTransparentBackgroundMain">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+        <item name="android:minHeight">23dp</item>
+        <item name="android:maxHeight">23dp</item>
+    </style>
+
+    <style name="transparentBackground">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/facebook</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="PanelView">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">@dimen/elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="DatesScrollItem">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:background">@drawable/date_scroll_item_background</item>
+    </style>
+
+    <style name="ShareIconsButton">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="elevation">@dimen/elevation</item>
+        <item name="fabSize">mini</item>
+    </style>
+
+</resources>

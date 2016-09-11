@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="blue_conference" type="color">#b926437e</item>
+    <!--#FF0098cb</item>-->
+    <item name="light_gray" type="color">#FFD4D4D4</item>
+    <item name="lighter_gray" type="color">#77f2f2f2</item>
+    <item name="lighter_gray_background" type="color">#FFF7F7F7</item>
+    <item name="orange_conference" type="color">#FFFF5B0B</item>
+    <item name="semi_transparent" type="color">#12000000</item>
+    <item name="semi_transparent_blue" type="color">#3326437E</item>
+    <item name="dark_blue" type="color">#FF26437E</item>
+    <item name="red_color" type="color">#ffff4444</item>
+    <item name="magda_yellow" type="color">#ffffa31c</item>
+    <item name="full_black" type="color">#ff000000</item>
+    <item name="dark_text" type="color">#FF000000</item>
+    <item name="alpha_black" type="color">#2e000000</item>
+    <item name="green_connected" type="color">#ff9acd00</item>
+<!---->
+    <item name="secondary_color" type="color">@color/green_connected</item>
+    <item name="primary_color" type="color">@color/full_black</item>
+    <!--<item name="tw__solid_white" type="color">#FFf1f1f1</item>-->
+</resources>

@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_with_linkedin_text"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:layout_width="2000dp"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow"/>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:gravity="start"
+        android:minHeight="?listPreferredItemHeight"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:minLines="5"
+        android:hint="@string/share_with_linkedin_text"
+        android:paddingRight="?listPreferredItemPaddingRight" />
+</RelativeLayout>
+

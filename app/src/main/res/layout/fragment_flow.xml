@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FlowFragment"
+    tools:showIn="@layout/activity_flow">
+
+    <com.anton46.stepsview.StepsView
+        android:id="@+id/steps_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/timer_tv"
+        android:layout_width="@dimen/menu_icons"
+        android:layout_height="@dimen/menu_icons"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_tv"
+        android:elevation="@dimen/elevation"
+        android:gravity="center"
+        android:text="@string/start_cooking"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/skip_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_set_as" />
+
+        <TextView
+            android:id="@+id/skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/skip_step"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

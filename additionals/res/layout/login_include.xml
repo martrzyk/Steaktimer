@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/login_include_layout"
+    android:visibility="gone"
+    android:gravity="center">
+
+    <LinearLayout
+        style="@style/ListItemHeadline"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            style="@style/LoginItemMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/login_to_play"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContestRulesLoggedout"
+        style="@style/LoginItemMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp"
+        android:text="@string/rules"
+        android:textSize="16sp"
+        android:layout_gravity="right|bottom"
+        android:visibility="visible"/>
+</LinearLayout>

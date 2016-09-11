@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fragment_mainLayout"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/lighter_gray_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/top_padding">
+
+        <RelativeLayout
+            android:id="@+id/speaker_main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/icons_primary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/imageViewSpeakerRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/request_meeting" />
+
+                <ImageView
+                    android:id="@+id/imageViewSpeakerContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_more_horiz_white_36dp" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutSpeakerPictureSingle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignBottom="@id/back_button_tv"
+                android:layout_alignTop="@id/back_button_tv"
+                android:layout_below="@id/back_button_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewSpeakerPictureSingle"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/abc_list_selector_background_transition_holo_dark"
+                    android:visibility="invisible"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarSpeakerSingle"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewSpeakerNameSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/frameLayoutSpeakerPictureSingle"
+                android:text="@string/we_found_nothing"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSpeakerPositionSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSpeakerNameSingle"
+                android:layout_centerHorizontal="true"
+                android:text="POSITION"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/textViewSpeakerCompanySingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSpeakerPositionSingle"
+                android:layout_centerHorizontal="true"
+                android:text="COMPANY"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSpeakerCompanySingle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/speaker_details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/speaker_details_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/details"/>
+
+                    <TextView
+                        android:id="@+id/speaker_details_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speaker_details"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/speaker_agenda_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/speaker_agenda_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/calendar_icon"/>
+
+                    <TextView
+                        android:id="@+id/speaker_agenda_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speaker_events"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/speaker_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/speaker_main_relative"
+            />
+
+        <include
+            layout="@layout/speakers_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/speaker_main_relative"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/rounded_dialog_white"
+    android:minHeight="100dp"
+    style="@style/FullHeightDialog"
+    android:paddingTop="30dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/textViewErrorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:gravity="center"
+	    android:textColor="@android:color/black"
+		android:text="test"/>
+
+    <TextView
+        android:id="@+id/buttonErrorDialogOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+		android:background="@drawable/rounded_edittext"
+		android:layout_below="@id/textViewErrorLayout"
+        android:text="OK" />
+    
+</RelativeLayout>

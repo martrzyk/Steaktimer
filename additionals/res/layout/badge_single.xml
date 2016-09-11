@@ -1,0 +1,137 @@
+<FrameLayout
+    android:id="@+id/fragment_mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_gray_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/badge_main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/icons_primary"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/layoutBadgeShareLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewBadgeShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_share_white_36dp"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutBadgePicture"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/back_button_layout"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageViewBadgePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/badge_empty"
+                    android:visibility="visible"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarBadgePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayoutBadgePicture"
+                android:layout_centerHorizontal="true"
+                android:text="@string/we_found_nothing"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:maxEms="50"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBadgeTitle"
+                android:padding="5dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/clock_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewBadgeDate"
+                    android:layout_marginRight="2dp"
+                    android:layout_toStartOf="@+id/textViewBadgeDate"
+                    android:src="@drawable/ic_query_builder_white_24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewBadgeDate"
+                    style="@style/ListItemHeadlineSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/we_found_nothing"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/badge_main_relative">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/PanelView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewBadgeMessage"
+                        style="@style/ListItemHeadlineMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:minHeight="80dp"
+                        android:text="Medium Text"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

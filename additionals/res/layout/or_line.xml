@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/or"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/primary_color" />
+
+    <View
+        android:id="@+id/viewLeftLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/textViewOr"
+        android:background="@color/primary_color" />
+    
+    <View
+        android:id="@+id/viewRightLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/textViewOr"
+        android:background="@color/primary_color" />
+
+
+</RelativeLayout>

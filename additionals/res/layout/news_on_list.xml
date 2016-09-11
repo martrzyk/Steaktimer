@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:duplicateParentState="true"
+        style="@style/PanelView">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutNewsTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutNewsPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/imageViewNewsPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/com_facebook_profile_picture_blank_square"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarNewsPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewNewsTitle"
+                style="@style/ListItemHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/frameLayoutNewsPicture"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/frameLayoutNewsPicture"
+                android:text="Small TextSmall TextSmall Text" />
+
+            <TextView
+                android:id="@+id/textViewNewsPerson"
+                style="@style/ListItemOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewNewsTitle"
+                android:layout_below="@id/textViewNewsTitle"
+                android:text="by person" />
+
+            <TextView
+                android:id="@+id/textViewNewsDate"
+                style="@style/ListItemMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewNewsTitle"
+                android:layout_below="@+id/textViewNewsPerson"
+                android:text="Small Text" />
+
+            <TextView
+                android:id="@+id/textViewNewsMessage"
+                style="@style/ListItemOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewNewsDate"
+                android:layout_below="@+id/textViewNewsDate"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Medium Text" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

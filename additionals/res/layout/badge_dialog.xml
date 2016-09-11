@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/beacon_relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/badge_background"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/badge_view_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/cancel_icon"/>
+
+            <ImageView
+                android:id="@+id/badge_view_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/badge_view_close"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/badge_view_close"
+                android:padding="10dp"
+                android:src="@drawable/ic_share_white_36dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/badge_view_main"
+            style="@style/DatesTransparentBackgroundMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/badge_notification_title"/>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/badge_view_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/badge_empty"/>
+
+            <ProgressBar
+                android:id="@+id/badge_view_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/badge_view_message"
+            style="@style/headLinesItems"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="test"/>
+
+
+        <TextView
+            android:id="@+id/badge_view_points"
+            style="@style/headLinesItems"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

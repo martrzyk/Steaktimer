@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/FullHeightDialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog_white"
+    android:minHeight="100dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/textViewErrorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/information"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textViewTextLayout"
+        android:layout_below="@id/textViewErrorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTextLayout"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/background_line"/>
+
+    <TextView
+        android:id="@+id/buttonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/cancel"
+        android:layout_below="@id/top_line"/>
+
+
+</RelativeLayout>

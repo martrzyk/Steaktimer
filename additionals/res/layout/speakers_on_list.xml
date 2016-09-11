@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:duplicateParentState="true"
+        style="@style/PanelView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageViewSpeakerPicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blank_person"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textViewSpeakerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/imageViewSpeakerPicture"
+                android:layout_alignEnd="@id/imageViewSpeakerPicture"
+                android:layout_below="@id/imageViewSpeakerPicture"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="TEST"
+                android:lines="2"
+                android:ellipsize="end"
+                style="@style/ListItemHeadline"
+                />
+
+            <TextView
+                android:id="@+id/textViewSpeakerPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textViewSpeakerName"
+                android:gravity="center"
+                android:text="test"
+                android:lines="2"
+                android:ellipsize="end"
+                style="@style/ListItemOthers"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarSpeaker"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

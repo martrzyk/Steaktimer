@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_key" translatable="false">4B131E05-2D0B-458D-A0A9-29AC7211F469</string>
+    <string name="base_link_service" translatable="false">http://gucio2.krakow.comarch/Conference2Dev/CUGService.svc/json/</string>
+    <string name="base_link" translatable="false">http://gucio2.krakow.comarch/Conference2Dev/</string>
+    <string name="contest_rules_link" translatable="false">https://ea2.ecod.pl/ConnectUnconnected2015/ContestRules.html</string>
+
+    <string name="token_secret" translatable="false">8GkrUlgbFnrgrTmwDTit</string>
+
+    <string name="pictures" translatable="false">pictures/</string>
+    <string name="documents" translatable="false">documents/</string>
+    <string name="password_salt" translatable="false">cnkjdhsjdhsadad{0}cmldsldfkdfnkjdfbn</string>
+    <string name="facebook_password_mask" translatable="false">djhasgdjasgashgdfacebookjsajdagfjgsadf{0}sfkshdfkhsdkfhdkfsjhfkhs</string>
+
+    <string name="app_name" translatable="false">Events</string>
+    <string name="app_name_full" translatable="false">Comarch Events</string>
+
+    <string name="hashtag" translatable="false">http://www.comarch.pl/</string>
+    <string name="share_link" translatable="false">http://www.comarch.pl/</string>
+
+    <string name="twitter_CONSUMER_KEY" translatable="false">IcuCYZ9syMbewZRHJRLcuGU68</string>
+    <string name="twitter_CONSUMER_SECRET" translatable="false">BXXREFiluDDovL7Obf2rKXB3WiOIIk1CGoPhsS3krvBv0zQOD9</string>
+
+    <string name="privacy_address" translatable="false">http://ea2.ecod.pl/legal/privacy/</string>
+    <string name="service_refresh_rate_in_minutes" translatable="false">5</string>
+
+</resources>

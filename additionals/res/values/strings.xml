@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="action_settings">Settings</string>
+    <!-- facebookId -->
+    <string-array name="facebook_array">
+        <item>User Profile</item>
+        <item>Post Message</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Update Story</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="twitter_array">
+        <item>User Profile</item>
+        <item>Send Tweet</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="drawable_array">
+        <item>share</item>
+        <item>profile</item>
+        <item>contacts</item>
+        <item>feeds</item>
+        <item>image</item>
+        <item>albums</item>
+        <item>notepad</item>
+        <item>close</item>
+    </string-array>
+
+    <string name="playstore_addres">https://play.google.com/store/apps/details?id=%1$s&amp;hl=en</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="menu_news">News</string>
+    <string name="menu_speakers">Speakers</string>
+    <string name="menu_places">Location</string>
+    <string name="menu_schedule">Agenda</string>
+    <string name="menu_solutions">Products</string>
+    <string name="menu_user_log_in">Log In</string>
+    <string name="menu_user_profile">Profile</string>
+    <string name="menu_game">Game</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_surveys">Polls</string>
+    <string name="menu_conference">Conference</string>
+    <string name="menu_participants">People</string>
+    <string name="login_credentials_empty">Please complete your login.</string>
+    <string name="login_empty">Please provide your email address.</string>
+    <string name="login_validating_credentials">Verification of credentials. Please, wait ...</string>
+    <string name="login_creating">Create a new account. Please, wait ...</string>
+    <string name="login_updating">Update your account. Please, wait ...</string>
+    <string name="login_updating_conference">Updating the agenda ...</string>
+    <string name="login_updating_solutions">Product update ...</string>
+    <string name="login_updating_points">Updating the competition ...</string>
+    <string name="login_wrong_credentials">Invalid email address or password!</string>
+    <string name="login_account_inactive">Account has been disabled!</string>
+    <string name="login_error">Can\'t login!\n\nPlease try again later.</string>
+    <string name="login_create_error">Can\'t create new user!\n\nPlease try again later.</string>
+    <string name="login_create_missing">Please fill in all mandatory fields.</string>
+    <string name="login_passwords_missing">Please fill in the fields with the old and new password!</string>
+    <string name="login_passwords_mismatch">Passwords do not match!</string>
+    <string name="login_email_wrong">E-mail address has an invalid format!\n\nPlease correct it and try again.</string>
+    <string name="login_email_used">The email address is already taken!\n\nPlease try to login.</string>
+    <string name="login_email_not_exists">There is no user with the email address %s!</string>
+    <string name="login_update_error">Can\'t update data!\n\nPlease try again later.</string>
+    <string name="reset_password_error">Can\'t reset a user\'s password!\n\nPlease try again later.</string>
+    <string name="reset_password_completed">Message with further instructions has been sent to %s.\n\nPlease check your email.</string>
+    <string name="login_password_changing">Changing your password ...</string>
+    <string name="login_password_reseting">Reset password ...</string>
+    <string name="login_password_wrong_credentials">Invalid login details!\n\nPlease check the old password and try again.</string>
+    <string name="login_password_change_error">Can\'t change your password!\n\nPlease try again.</string>
+    <string name="login_password_change_success">Pasword has been changed.</string>
+    <string name="login_to_use_functionality">This option is available only to registered users.</string>
+    <string name="profile">Profile</string>
+    <string name="password_reset">Reset password</string>
+    <string name="password_change">Change password</string>
+    <string name="password_old">Old password</string>
+    <string name="password_new_1">New password</string>
+    <string name="password_new_2">Repeat the new password</string>
+    <string name="password_invalid">Password must meet the requirements:</string>
+    <string name="password_lower">- contains a lowercase character</string>
+    <string name="password_upper">- contains a uppercase character</string>
+    <string name="password_number">- contains a base 10 digits character (0-9)</string>
+    <string name="password_non_alpha">- contains a nonalphanumeric character</string>
+    <string name="password_minimum_length">- minimum length is %s</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="warning">Warning</string>
+    <string name="error">Opps!</string>
+    <string name="send">Send</string>
+    <string name="more">more ...</string>
+    <string name="updating">Updating ...</string>
+    <string name="updated">Updated</string>
+    <string name="never">never</string>
+    <string name="no_data">Try pull to refresh</string>
+    <string name="no_data_filter">No data to display</string>
+    <string name="no_data_favorite">There are no favorites to display</string>
+    <string name="news">News</string>
+    <string name="news_prefix">news by</string>
+    <string name="ok">Ok</string>
+    <string name="by">by</string>
+    <string name="info">Info</string>
+    <string name="email">Email</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="password2">Repeat password</string>
+    <string name="or">or</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="position">Position</string>
+    <string name="company">Company</string>
+    <string name="oblige">*</string>
+    <string name="log_out">Log out</string>
+    <string name="log_in">Log in</string>
+    <string name="options">Options</string>
+    <string name="settings">Settings</string>
+    <string name="question">Question</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="me">Me</string>
+    <string name="back">Back</string>
+    <string name="remove">Remove</string>
+    <string name="register">Sing up</string>
+    <string name="verify">Verify</string>
+    <string name="logout">Logout</string>
+    <string name="logout_question">Are you sure you want to log out?</string>
+    <string name="login">Log In</string>
+    <string name="login_title">Log in or Create Your Account</string>
+    <string name="login_button">Log in</string>
+    <string name="login_privacy_button">By signing up, you agree to our Terms and Privacy Policy</string>
+    <string name="login_privacy">Terms and Privacy Policy</string>
+    <string name="login_privacy_empty">Can\'t load Privacy Policy.\nTry pull to refresh.</string>
+    <string name="login_password">Forgot Your password?</string>
+    <string name="login_or_sign_in">or Sign in with</string>
+    <string name="login_no_account">Don\'t have an account?</string>
+    <string name="login_register">Sign Up Now</string>
+    <string name="filter">Filter</string>
+    <string name="filter_show_all">Show all</string>
+    <string name="no_network">No connection to the Internet.\nPlease try again later.</string>
+    <string name="server_error">Can\'t refresh data.\nPlease try again later.</string>
+    <string name="wrong_credentials">Incorrect login or password. Please verify your data and try again.</string>
+    <string name="facebook_login_creating">Log in with Facebook. Please, wait ...</string>
+    <string name="facebook_error">We can\'t communicate with Facebook.\n\nPlease verify that Facebook app is installed and try again later.</string>
+    <string name="twitter_login_creating">Log in with Twitter. Please, wait ...</string>
+    <string name="twitter_error">We can\'t communicate with Twitter.\n\nPlease verify that Twitter app is installed or Twitter account is configured in Settings app and try again later.</string>
+    <string name="linkedin_login_creating">Log in with LinkedIn. Please, wait ...</string>
+    <string name="linkedin_error">We can\'t communicate with LinkedIn.\nPlease verify that LinkedIn app is installed and try again later.</string>
+    <string name="linkedin_duplicate_info">LinkedIn reports that you published this content already.</string>
+    <string name="event_description_empty">No details are available.</string>
+    <string name="event_speakers_empty">No speakers are available.</string>
+    <string name="event_rate_not_started">The event will be available for the evaluation of %s.</string>
+    <string name="event_comment_not_started">The event will be available for comment from %s.</string>
+    <string name="event_document_not_started">The document will be available for download from %s.</string>
+    <string name="event_document_check_error">Can\'t check document is available to download.\nPlease try again later.</string>
+    <string name="event_comment_placeholder">Write a comment ...</string>
+    <string name="event_question_placeholder">Write a question ...</string>
+    <string name="event_comments_empty">No comments are available.</string>
+    <string name="event_questions_empty">No questions are available.</string>
+    <string name="event_comments_login">Log in to see and add comments.</string>
+    <string name="event_questions_login">Log in to see and add questions.</string>
+    <string name="event_details">Details</string>
+    <string name="event_comments">Comments</string>
+    <string name="event_comment">Comment</string>
+    <string name="event_questions">Questions</string>
+    <string name="event_question">Question</string>
+    <string name="event_comment_sending">Sending comment ...</string>
+    <string name="event_question_sending">Sending question ...</string>
+    <string name="event_rate_sending">Sending rating ...</string>
+    <string name="event_social_sending">Reporting social activity ...</string>
+    <string name="event_document_checking">Checking document ...</string>
+    <string name="event_checking">Checking event ...</string>
+    <string name="event_rate">Rate</string>
+    <string name="event_rate_error">Can\'t rate event.\nPlease try again later.</string>
+    <string name="event_rate_not_available">Rating is not yet available</string>
+    <string name="event_question_prefix">question by</string>
+    <string name="event_comment_prefix">commented by</string>
+    <string name="event_question_answer_prefix">answered by</string>
+    <string name="speaker">Speaker</string>
+    <string name="speaker_details">Details</string>
+    <string name="speaker_events">Agenda</string>
+    <string name="speaker_description_empty">No details are available.</string>
+    <string name="speaker_events_empty">Agenda is empty.</string>
+    <string name="speaker_contact_request">Contact request</string>
+    <string name="speaker_contact_info">We\'ll send your contact request directly to the speaker. It will contain your profile info, so make sure it\'s up to date.</string>
+    <string name="speaker_contact_request_send">Request contact</string>
+    <string name="speaker_contact_requesting">Sending contact request ...</string>
+    <string name="speaker_contact_request_already_send">Contact request was already sent.</string>
+    <string name="speaker_contact_request_error">Can\'t send contact request to the speaker.\n Please try again later.</string>
+    <string name="solution_details">Details</string>
+    <string name="solution_comments">Comments</string>
+    <string name="solution_comment">Comment</string>
+    <string name="solution_comments_empty">No comments are available.</string>
+    <string name="solution_description_empty">No details are available.</string>
+    <string name="solution_comments_login">Log in to see and add comments.</string>
+    <string name="solution_contacts">Contacts</string>
+    <string name="solution_contacts_empty">No contacts are available.</string>
+    <string name="solution_comment_sending">Sending solution comment ...</string>
+    <string name="solution_comment_placeholder">Write a comment ...</string>
+    <string name="solution_comment_prefix">commented by</string>
+    <string name="solution_social_sending">Reporting social activity ...</string>
+    <string name="map_open_error">Can\'t display maps!\n\nPlease try again later.</string>
+    <string name="map_navigate_warning">Can\'t start navigation to place!\n\nPlease try again later.</string>
+    <string name="file_download">Download</string>
+    <string name="file_open">Open</string>
+    <string name="file_remove">Remove</string>
+    <string name="file_cancel">Cancel</string>
+    <string name="file_open_error">Sorry.\nCan\'t open this file on your device.</string>
+    <string name="file_remove_ask">Are you sure you want to delete the selected file?</string>
+    <string name="game_scoreboard">Best participants\' scores</string>
+    <string name="game_points_earned">You earned points for activity</string>
+    <string name="game_question">Game question?</string>
+    <string name="game_own_points">Your points</string>
+    <string name="game_top_points">Top points</string>
+    <string name="game_reward_points">Reward minimum</string>
+    <string name="game_login_reason">Log in to gain access to game.</string>
+    <string name="game_rules">Contest rules</string>
+    <string name="game_rules_info">Apple Inc. is not a sponsor nor is involved in any way in Contest.</string>
+    <string name="game_rules_empty">No game rules are available.\n\nPlease try again later.</string>
+    <string name="share_with_facebook">Share on Facebook</string>
+    <string name="share_with_twitter">Share on Twitter</string>
+    <string name="share_text">Share comment</string>
+    <string name="share_image">Share picture</string>
+    <string name="share_image_not_available">Application does not have access to device photos! You can change is in System Settings.</string>
+    <string name="share_login_reason">Log in to gain access to sharing.</string>
+    <string name="picture_mode_create">Take picture</string>
+    <string name="picture_mode_existing">Choose from gallery</string>
+    <string name="time_one_minute_ago">1 minute ago</string>
+    <string name="time_one_hour_ago">1 hour ago</string>
+    <string name="time_minutes_ago">minutes ago</string>
+    <string name="time_hours_ago">hours ago</string>
+    <string name="time_yesterday_at">Yesterday at</string>
+    <string name="time_just_now">Now</string>
+    <string name="time_in_the_future">In the futere</string>
+    <string name="beacon_notification_title">You reached Beacon!</string>
+    <string name="beacon_points">%s pt</string>
+    <string name="badge_notification_title">You got new Badge!</string>
+    <string name="badge_notification_message">Congratulations!\n\nYou managed to get a badge %s.</string>
+    <string name="badge_points">%s pt</string>
+    <string name="badge_social_sending">Reporting social activity ...</string>
+    <string name="badge_not_assigned">not assigned</string>
+    <string name="badge_assigned">assigned</string>
+    <string name="badges_available">Available badges</string>
+    <string name="survey_available_to">Available until </string>
+    <string name="survey_not_ready_to_send">Please answer all questions.</string>
+    <string name="survey_sending">Sending survey ...</string>
+    <string name="survey_unavailable">The survey is no longer available to fill.</string>
+    <string name="survey_alread_answered">The survey has already been completed.</string>
+    <string name="survey_send_error">Can\'t send your answers!\n\nPlease try again later.</string>
+    <string name="survey_points">%s pt</string>
+    <string name="survey_login_reason">Log in to gain access to polls.</string>
+    <string name="survey_cancel_ask">Do you want to cancel filling in the poll?</string>
+    <string name="survey_question_answer">Your answer</string>
+    <string name="conference_choose">Choose conference</string>
+    <string name="conference_search">Search conference</string>
+    <string name="conference_change">Change conference</string>
+    <string name="conference_loading">Loading conference. Please wait ...</string>
+    <string name="conference_loading_error">Can\'t load conference.\n\nPlease try again later.</string>
+    <string name="conference_search_empty">Not found any conference.</string>
+    <string name="conference_future">FUTURE</string>
+    <string name="conference_future_title">Future conferences</string>
+    <string name="conference_past">PAST</string>
+    <string name="conference_past_title">Past conferences</string>
+    <string name="conference_current">CURRENT</string>
+    <string name="conference_current_title">Current conferences</string>
+    <string name="conference_back_to">Back to</string>
+    <string name="conference_current_info">Current conference</string>
+    <string name="conference_change_info">All your data and settings on the current conference will be saved before the change.\n\nYou can always come back again to the current conference.</string>
+    <string name="conference_plan">Plan</string>
+    <string name="conference_plan_loading">Loading conference plan ...</string>
+    <string name="conference_plan_empty">No conference plan is available.\n\nPlease try again later.</string>
+    <string name="conference_share">Share your impressions of the conference</string>
+    <string name="conference_share_choose_social">Choose social network</string>
+    <string name="conference_share_choose_type">Choose type of share</string>
+    <string name="conference_social_sending">Reporting social activity ...</string>
+    <string name="conference_verify_code_placeholder">Enter verify code</string>
+    <string name="conference_verify_code_error">Can\'t verify your code.\nPlease try again later.</string>
+    <string name="conference_verify_code_wrong">Invalid verification code.</string>
+    <string name="conference_verify_description">This content is available only to verified participants.\nPlease enter the code received from the organizer.</string>
+    <string name="participant">Participant</string>
+    <string name="participant_inactive_error">Your account has been disabled.</string>
+    <string name="participant_inactive_for_conference_error">Your account has been disabled for selected conference.</string>
+    <string name="participant_other_login_reason">Log in to gain access to other participants.</string>
+    <string name="participant_other_empty">No other participants are available.\nTry pull to refresh.</string>
+    <string name="participant_contact_request">Contact request</string>
+    <string name="participant_contact_info">We\'ll send your contact request directly to the participant. It will contain your profile info, so make sure it\'s up to date.</string>
+    <string name="participant_contact_request_send">Request contact</string>
+    <string name="participant_contact_requesting">Sending contact request ...</string>
+    <string name="participant_contact_request_already_send">Contact request was already sent.</string>
+    <string name="participant_contact_request_error">Can\'t send contact request to the participant.\n Please try again later.</string>
+
+
+    <!-- ANDROID NATIVE -->
+    <string name="documents_text">Documents</string>
+    <string name="login_privacy_begining">By signing up, you agree to our </string>
+    <string name="add_comment">Add comment</string>
+    <string name="add_question">Add question</string>
+    <string name="add_picture">Add picture</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="no_answer_yet">no answer yet</string>
+    <string name="and_more"> ... </string>
+    <string name="verification">Verification</string>
+    <string name="verification_code">Verification</string>
+    <string name="conference_verify_title">Verification</string>
+    <string name="phone">Phone</string>
+    <string name="survey_available_up_to" translatable="false">Available until: </string>
+    <string name="fill_all_answers">Please fill all answers</string>
+    <string name="we_found_nothing">We found nothing.</string>
+    <string name="Facebook_share">Facebook share</string>
+    <string name="select_from_library">Select from library</string>
+    <string name="make_new_photo">Make new photo</string>
+    <string name="top_score">Top score:</string>
+    <string name="your_score">Your score:</string>
+    <string name="rules">Contest rules</string>
+    <string name="information">Information</string>
+    <string name="login_to_play">Log in to play</string>
+    <string name="facebook">Facebook</string>
+    <string name="register_question">What does customer experience mean to you?</string>
+    <string name="question_addon">Filling out this field is necessary to take part in the contest.  In case of a tie in points, the best slogan entered in this field will be of deciding value in settling on a winner.</string>
+    <string name="if_not_registered">If not registered</string>
+    <string name="register_yourself">Register</string>
+    <string name="signup">Sign up</string>
+    <string name="madatory_fields">* mandatory fields</string>
+    <string name="something_went_wrong">Something went wrong! Please try again later.</string>
+    <string name="email_not_exists">Email does not exist.</string>
+    <string name="event_commentable_after_date">Event will be available to comment after %1$s.</string>
+    <string name="missing_application">Missing application to open file.</string>
+    <string name="password_does_not_match">The password does not meet the requirements!\n</string>
+    <string name="password_must_be">The password must be a minimum of</string>
+    <string name="chars_long">characters long, including:\n</string>
+    <string name="click_back_again_to_cancel">Click back again to cancel.</string>
+    <string name="password_restarted">Password reseted</string>
+    <string name="points">points</string>
+    <string name="facebook_is_loading">Facebook app is loading</string>
+    <string name="at">at</string>
+    <string name="saving_poll">Saving poll</string>
+    <string name="share_with_linkedin">Share on LinkedIn</string>
+    <string name="share_with_linkedin_text">What is on your mind?</string>
+    <string name="share_with_linkedin_shared">Your message was shared!</string>
+    <string name="general_loading">Loading ..</string>
+    <string name="general_please_wait">Please wait.</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

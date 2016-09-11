@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    style="@style/PanelView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/chat_message_author_initials_frame"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/chat_message_author_initials_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/rounded_tv"/>
+
+            <TextView
+                android:id="@+id/chat_message_author_initials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/lighter_gray_background" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/chat_message_message"
+            style="@style/ListItemHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/chat_message_author_initials_frame"
+            android:ellipsize="end"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/chat_message_author"
+            style="@style/ListItemMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/chat_message_message"
+            android:layout_margin="5dp"
+            android:text="aaa"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

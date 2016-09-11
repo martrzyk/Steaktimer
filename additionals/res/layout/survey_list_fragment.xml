@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/top_padding"
+    android:id="@+id/fragment_mainLayout"
+    android:background="@color/lighter_gray_background">
+
+    <include
+        layout="@layout/logo_top"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutAllPresentations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_top_layout"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/survey_listView"
+            android:visibility="visible"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/survey_list_no_data_tv"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/we_found_nothing"
+        android:textColor="@color/primary_color"
+        android:visibility="gone"
+        ></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<FrameLayout
+    android:id="@+id/fragment_placeholder"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/logo_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"/>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo_top_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageButtonGoogleMaps"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mapa_terenu_1x"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@id/imageButtonGoogleMaps"
+                    android:background="@drawable/map_gradient_shape"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@id/imageButtonGoogleMaps"
+                    android:background="@drawable/map_gradient_shape_top"/>
+
+                <RelativeLayout
+                    android:id="@+id/addressRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButtonGoogleMaps"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="150dp">
+
+                    <TextView
+                        android:id="@+id/addressInformationNameTextView"
+                        style="@style/headLinesItems"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/we_found_nothing"/>
+
+                    <TextView
+                        android:id="@+id/addressInformationTextView"
+                        style="@style/LoginItemBlueSmall"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addressInformationNameTextView"
+                        android:text="@string/we_found_nothing"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/addressInformationTextView">
+
+                        <LinearLayout
+                            android:id="@+id/map_plan_icon_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:background="@drawable/rounded_clickable"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/plan"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/map_navigation_icon_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="45dp"
+                            android:clickable="true"
+                            android:background="@drawable/rounded_clickable"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/navigate"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
