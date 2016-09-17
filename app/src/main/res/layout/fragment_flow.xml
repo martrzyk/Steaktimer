@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".FlowFragment"
+    tools:context="com.martrzyk.steaktimer.FlowFragment"
     tools:showIn="@layout/activity_flow">
 
     <com.anton46.stepsview.StepsView
