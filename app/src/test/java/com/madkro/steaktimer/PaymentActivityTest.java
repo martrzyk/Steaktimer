@@ -3,7 +3,9 @@ package com.madkro.steaktimer;
 import android.view.View;
 import android.widget.TextView;
 
+import com.martrzyk.steaktimer.BuildConfig;
 import com.martrzyk.steaktimer.FlowActivity;
+import com.martrzyk.steaktimer.R;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,8 +1,8 @@
 package com.martrzyk.steaktimer;
 
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.anton46.stepsview.StepsView;
-import com.madkro.steaktimer.R;
 import com.martrzyk.steaktimer.flow.StepFrying;
 import com.martrzyk.steaktimer.flow.StepResting;
 import com.martrzyk.steaktimer.flow.StepRotate;

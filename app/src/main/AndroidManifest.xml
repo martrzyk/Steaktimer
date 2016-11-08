@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.madkro.steaktimer">
+    package="com.martrzyk.steaktimer">
 
     <application
         android:allowBackup="true"
@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.martrzyk.steaktimer.FlowActivity"
+            android:name="com.martrzyk.steaktimer.FlowActivity_"
             android:label="@string/title_activity_flow"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

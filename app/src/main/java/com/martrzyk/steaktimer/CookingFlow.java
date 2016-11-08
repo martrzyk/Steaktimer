@@ -4,7 +4,6 @@ import android.content.Context;
 import android.widget.TextView;
 
 import com.anton46.stepsview.StepsView;
-import com.madkro.steaktimer.R;
 import com.martrzyk.steaktimer.flow.Step;
 
 import java.util.ArrayList;

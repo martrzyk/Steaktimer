@@ -9,27 +9,23 @@
     <Spinner
         android:id="@+id/meat_type"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
 
     <Spinner
         android:id="@+id/meat_doneness"
-        android:spinnerMode="dropdown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/meat_type"
-        />
+        android:spinnerMode="dropdown" />
 
 
     <TextView
         android:id="@+id/start_cooking_button"
-        android:layout_centerInParent="true"
         android:layout_width="@dimen/menu_icons"
         android:layout_height="@dimen/menu_icons"
-        android:gravity="center"
+        android:layout_centerInParent="true"
         android:background="@drawable/rounded_tv"
         android:elevation="@dimen/elevation"
-        android:text="@string/start_cooking"
-        />
-
+        android:gravity="center"
+        android:text="@string/start_cooking" />
 </RelativeLayout>

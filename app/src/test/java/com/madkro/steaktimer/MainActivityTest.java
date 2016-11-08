@@ -8,9 +8,11 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.martrzyk.steaktimer.BuildConfig;
 import com.martrzyk.steaktimer.FlowActivity;
 import com.martrzyk.steaktimer.FlowFragment;
 import com.martrzyk.steaktimer.MainActivity;
+import com.martrzyk.steaktimer.R;
 import com.martrzyk.steaktimer.TestActivity;
 
 import org.junit.Before;

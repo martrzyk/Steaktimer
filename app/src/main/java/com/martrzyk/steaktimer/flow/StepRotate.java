@@ -1,6 +1,7 @@
 package com.martrzyk.steaktimer.flow;
 
-import com.madkro.steaktimer.R;
+
+import com.martrzyk.steaktimer.R;
 
 /**
  * Created by Marek on 2016-08-21.

@@ -2,7 +2,7 @@ package com.martrzyk.steaktimer.data;
 
 import android.content.Context;
 
-import com.madkro.steaktimer.R;
+import com.martrzyk.steaktimer.R;
 import com.martrzyk.steaktimer.pojo.BaseItem;
 
 import java.util.ArrayList;
