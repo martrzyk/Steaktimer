@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.martrzyk.steaktimer.FlowActivity">
+    tools:context="com.martrzyk.steaktimer.flow.FlowActivity_">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,5 +21,12 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_flow" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_fragment"
+        android:name="com.martrzyk.steaktimer.flow.FlowFragment_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_flow" />
+
 </android.support.design.widget.CoordinatorLayout>

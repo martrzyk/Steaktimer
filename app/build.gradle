@@ -34,6 +34,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.wefika:horizontal-picker:1.1.1'
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:1.10.19'
     testCompile "org.robolectric:robolectric:3.1.1"
@@ -43,4 +44,5 @@ dependencies {
     compile project(':stepsviewlib')
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile 'hanks.xyz:htextview-library:0.1.5'
 }

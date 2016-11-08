@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -6,26 +7,54 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Spinner
+    <!--<Spinner-->
+    <!--android:id="@+id/meat_type"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <com.wefika.horizontalpicker.HorizontalPicker
         android:id="@+id/meat_type"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="2"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textSize="22sp"
+        android:textColor="@drawable/horizontal_items"
+        app:dividerSize="10dp"
+        app:values="@array/meat_type"
+        app:sideItems="1" />
 
-    <Spinner
+    <com.wefika.horizontalpicker.HorizontalPicker
+        android:layout_below="@id/meat_type"
         android:id="@+id/meat_doneness"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/meat_type"
-        android:spinnerMode="dropdown" />
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="-1"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textColor="@drawable/horizontal_items"
+        android:textSize="22sp"
+        app:values="@array/doneness"
+        app:dividerSize="5dp"
+        app:sideItems="1" />
 
 
-    <TextView
+    <ImageButton
         android:id="@+id/start_cooking_button"
-        android:layout_width="@dimen/menu_icons"
-        android:layout_height="@dimen/menu_icons"
-        android:layout_centerInParent="true"
-        android:background="@drawable/rounded_tv"
+        android:layout_width="@dimen/menu_icons_small"
+        android:layout_height="@dimen/menu_icons_small"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_tv"
+        android:src="@drawable/steak_icon"
         android:elevation="@dimen/elevation"
         android:gravity="center"
-        android:text="@string/start_cooking" />
+        android:transitionName="@string/start_cooking" />
 </RelativeLayout>

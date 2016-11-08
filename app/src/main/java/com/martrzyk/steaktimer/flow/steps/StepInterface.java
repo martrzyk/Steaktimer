@@ -1,6 +1,6 @@
-package com.martrzyk.steaktimer.flow;
+package com.martrzyk.steaktimer.flow.steps;
 
-import com.martrzyk.steaktimer.CookingFlow;
+import com.martrzyk.steaktimer.flow.CookingFlow;
 
 /**
  * Created by Marek on 2016-08-21.

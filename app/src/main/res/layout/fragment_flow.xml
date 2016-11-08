@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,24 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.martrzyk.steaktimer.FlowFragment"
+    tools:context="com.martrzyk.steaktimer.flow.FlowFragment_"
     tools:showIn="@layout/activity_flow">
 
     <com.anton46.stepsview.StepsView
         android:id="@+id/steps_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent" />
-
-    <TextView
-        android:id="@+id/timer_tv"
-        android:layout_width="@dimen/menu_icons"
-        android:layout_height="@dimen/menu_icons"
-        android:layout_centerInParent="true"
-        android:background="@drawable/rounded_tv"
-        android:elevation="@dimen/elevation"
-        android:gravity="center"
-        android:text="@string/start_cooking"
-        android:textSize="18dp" />
 
     <LinearLayout
         android:id="@+id/skip_relative"
@@ -47,5 +37,19 @@
             android:textSize="18dp" />
     </LinearLayout>
 
+
+    <com.hanks.htextview.HTextView
+        android:id="@+id/timer_tv"
+        android:layout_width="@dimen/menu_icons"
+        android:layout_height="@dimen/menu_icons"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_tv"
+        android:gravity="center"
+        android:transitionName="@string/start_cooking"
+        android:elevation="@dimen/elevation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        htext:animateType="scale" />
 
 </RelativeLayout>

@@ -10,14 +10,31 @@
     <string name="medium_rare">Medium rare</string>
     <string name="medium">Medium</string>
     <string name="well_done">Well done</string>
+
     <string name="empty">no data</string>
     <string name="title_activity_flow">FlowActivity</string>
     <string name="start_cooking">Start cooking</string>
     <string name="steps">Steps</string>
+
     <string name="resting">Resting</string>
     <string name="warming">Warming</string>
     <string name="frying">Frying</string>
     <string name="rotate">Rotate</string>
     <string name="serving">Serving</string>
     <string name="skip_step">Skip step</string>
+
+
+    <string-array name="doneness">
+        <item>@string/rare</item>
+        <item>@string/medium_rare</item>
+        <item>@string/medium</item>
+        <item>@string/well_done</item>
+    </string-array>
+
+    <string-array name="meat_type">
+        <item>@string/rump_cut</item>
+        <item>@string/under_cut</item>
+        <item>@string/brisket</item>
+    </string-array>
+
 </resources>

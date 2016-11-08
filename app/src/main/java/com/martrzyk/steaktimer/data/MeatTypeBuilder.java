@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
+ *
  * Created by Marek on 2016-08-20.
  */
 public class MeatTypeBuilder {

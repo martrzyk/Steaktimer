@@ -1,4 +1,4 @@
-package com.martrzyk.steaktimer.flow;
+package com.martrzyk.steaktimer.flow.steps;
 
 
 import com.martrzyk.steaktimer.R;

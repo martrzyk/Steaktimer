@@ -1,15 +1,17 @@
-package com.martrzyk.steaktimer.flow;
+package com.martrzyk.steaktimer.flow.steps;
 
 
 import com.martrzyk.steaktimer.R;
+import com.martrzyk.steaktimer.flow.steps.Step;
 
 /**
  * Created by Marek on 2016-08-21.
  */
-public class StepFrying extends Step {
+public class StepWarming extends Step {
 
-    public StepFrying() {
-        id = R.string.frying;
+    private long startTime = 0;
+    public StepWarming() {
+        id = R.string.warming;
     }
 
     @Override
@@ -44,10 +46,6 @@ public class StepFrying extends Step {
 
     @Override
     public Long getTiming() {
-        if(donenessId == R.string.rare){ return 60L; }
-        else if(donenessId == R.string.medium_rare){ return 90L; }
-        else if(donenessId == R.string.medium){ return 120L; }
-        else if(donenessId == R.string.well_done){ return 150L; }
-        else return 60L;
+        return 1800L; //30minutes
     }
 }

@@ -4,27 +4,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.martrzyk.steaktimer.BuildConfig;
-import com.martrzyk.steaktimer.FlowActivity;
-import com.martrzyk.steaktimer.FlowFragment;
-import com.martrzyk.steaktimer.MainActivity;
+import com.martrzyk.steaktimer.flow.FlowActivity;
+import com.martrzyk.steaktimer.flow.FlowActivity_;
+import com.martrzyk.steaktimer.main.MainActivity;
 import com.martrzyk.steaktimer.R;
-import com.martrzyk.steaktimer.TestActivity;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
-import org.robolectric.shadows.ShadowIntent;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -82,7 +78,7 @@ public class MainActivityTest {
     public void shouldBeCreatedIntent() {
         final float TEST_PRICE = 12.0f;
 
-        Intent intent = FlowActivity.intentCreator(mContext);
+        Intent intent = FlowActivity_.intent(mContext).get();
         assertNotNull(intent);
         Bundle bundle = intent.getExtras();
 //        assertEquals(TEST_PRICE, bundle.getFloat(PaymentActivity.TOTAL_PRICE), 0.00001f);

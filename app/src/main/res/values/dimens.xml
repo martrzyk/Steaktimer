@@ -3,7 +3,12 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="menu_icons">175dp</dimen>
+    <dimen name="menu_icons">200dp</dimen>
+    <dimen name="menu_icons_small">85dp</dimen>
     <dimen name="elevation">3dp</dimen>
+
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
 
 </resources>

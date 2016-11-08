@@ -4,14 +4,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.martrzyk.steaktimer.BuildConfig;
-import com.martrzyk.steaktimer.FlowActivity;
+import com.martrzyk.steaktimer.flow.FlowActivity;
 import com.martrzyk.steaktimer.R;
+import com.martrzyk.steaktimer.flow.FlowActivity_;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
@@ -30,7 +30,7 @@ public class PaymentActivityTest {
     @Before
     public void setUp() {
         mActivity = Robolectric.buildActivity(FlowActivity.class)
-                .withIntent(FlowActivity.intentCreator(RuntimeEnvironment.application))
+                .withIntent(FlowActivity_.intent(RuntimeEnvironment.application).get())
                 .create()
                 .start()
                 .resume()

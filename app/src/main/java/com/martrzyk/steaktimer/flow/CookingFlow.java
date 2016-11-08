@@ -1,26 +1,28 @@
-package com.martrzyk.steaktimer;
+package com.martrzyk.steaktimer.flow;
 
 import android.content.Context;
 import android.widget.TextView;
 
 import com.anton46.stepsview.StepsView;
-import com.martrzyk.steaktimer.flow.Step;
+import com.hanks.htextview.HTextView;
+import com.martrzyk.steaktimer.R;
+import com.martrzyk.steaktimer.flow.steps.Step;
 
 import java.util.ArrayList;
 
 import lombok.Getter;
 
 /**
- *
  * Created by Marek on 2016-08-21.
  */
 public class CookingFlow {
     public static class CookingFlowBuilder {
         private ArrayList<Step> steps;
-        private TextView timerTextView, otherTextView;
+        private HTextView timerTextView;
+        private TextView otherTextView;
         private StepsView stepView;
         private Context context;
-        private int donenessId, type;
+        private long donenessId, type;
 
         public CookingFlowBuilder(Context context) {
             this.context = context;
@@ -42,7 +44,7 @@ public class CookingFlow {
             return this;
         }
 
-        public CookingFlowBuilder setTimerTextView(TextView timerTextView) {
+        public CookingFlowBuilder setTimerTextView(HTextView timerTextView) {
             this.timerTextView = timerTextView;
             return this;
         }
@@ -57,7 +59,7 @@ public class CookingFlow {
             return this;
         }
 
-        public CookingFlowBuilder setOptions(int pDoneness, int pType) {
+        public CookingFlowBuilder setOptions(long pDoneness, long pType) {
             this.donenessId = pDoneness;
             this.type = pType;
 
@@ -72,13 +74,15 @@ public class CookingFlow {
     @Getter
     private int position = -1;
     @Getter
-    private int donenessId, typeId;
+    private long donenessId, typeId;
     @Getter
     private StepsView stepView;
     @Getter
     private ArrayList<Step> steps;
     @Getter
-    private TextView timerTextView, otherTextView;
+    private HTextView timerTextView;
+    @Getter
+    private TextView otherTextView;
 
     public void setSteps(ArrayList<Step> steps) {
         this.steps = steps;
@@ -139,8 +143,7 @@ public class CookingFlow {
             step.execute();
         }
 
-        if(position == -1)
-        {
+        if (position == -1) {
             timerTextView.setText(R.string.start_cooking);
         }
 

@@ -8,6 +8,7 @@ import com.martrzyk.steaktimer.pojo.BaseItem;
 import java.util.ArrayList;
 
 /**
+ *
  * Created by Marek on 2016-08-20.
  */
 public class MeatDonenessBuilder {
