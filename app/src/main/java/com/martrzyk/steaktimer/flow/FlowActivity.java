@@ -1,5 +1,6 @@
 package com.martrzyk.steaktimer.flow;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -34,4 +35,12 @@ public class FlowActivity extends AppCompatActivity {
 
     @Extra
     long meatType;
+
+    @Override
+    public void onBackPressed() {
+        FlowFragment fragment = (FlowFragment)getSupportFragmentManager().findFragmentById(R.id.main_fragment);
+        fragment.loadEndTextAnimation();
+
+        super.onBackPressed();
+    }
 }

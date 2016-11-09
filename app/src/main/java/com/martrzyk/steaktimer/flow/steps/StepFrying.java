@@ -3,7 +3,10 @@ package com.martrzyk.steaktimer.flow.steps;
 
 import com.martrzyk.steaktimer.R;
 
+import java.util.Locale;
+
 /**
+ *
  * Created by Marek on 2016-08-21.
  */
 public class StepFrying extends Step {
@@ -22,7 +25,7 @@ public class StepFrying extends Step {
                 int minutes = seconds / 60;
                 seconds = seconds % 60;
 
-                mFlow.getTimerTextView().animateText(String.format("%d : %02d", minutes, seconds));
+                mFlow.getTimerTextView().animateText(String.format(Locale.getDefault(), "%d : %02d", minutes, seconds));
 
                 if(millis > 100)
                     timerHandler.postDelayed(this, 16); //we assume that refreshrate is at least 60fps which means 16ms per frame - no point of refreshing more often

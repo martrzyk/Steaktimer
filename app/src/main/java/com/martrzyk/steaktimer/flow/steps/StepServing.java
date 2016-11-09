@@ -14,8 +14,7 @@ public class StepServing extends Step {
 
     @Override
     public void execute() {
-        mFlow.getTimerTextView().setText(R.string.serving);
-
+        mFlow.getTimerTextView().animateText(mFlow.getContext().getString(R.string.serving));
     }
 
 

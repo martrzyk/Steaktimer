@@ -79,8 +79,11 @@ public class FlowFragment extends Fragment {
     }
 
     @AfterViews
-    void loadFirstTextAnimation() {
+    void loadStartTextAnimation() {
         mTimerView.animateText(getString(R.string.start_cooking)); // animate
     }
 
+    public void loadEndTextAnimation() {
+        mTimerView.animateText(""); // animate
+    }
 }

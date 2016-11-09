@@ -35,19 +35,4 @@ public class MainFragment extends Fragment {
                 .withOptions(transitionActivityOptions.toBundle())
                 .start();
     }
-
-    @AfterViews
-    void loadSpinners() {
-//        GenericSpinnerAdapter adapterForType = new GenericSpinnerAdapter<>(
-//                getActivity(),
-//                MeatTypeBuilder
-//                        .getInstance(getActivity())
-//                        .getMeatTypes());
-//
-//        GenericSpinnerAdapter adapterForDoneness = new GenericSpinnerAdapter<>(
-//                getActivity(),
-//                MeatDonenessBuilder
-//                        .getInstance(getActivity())
-//                        .getMeatDoneness());
-    }
 }

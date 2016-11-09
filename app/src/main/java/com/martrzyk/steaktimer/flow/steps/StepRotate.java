@@ -1,6 +1,8 @@
 package com.martrzyk.steaktimer.flow.steps;
 
 
+import android.support.v4.content.ContextCompat;
+
 import com.martrzyk.steaktimer.R;
 
 /**
@@ -15,6 +17,6 @@ public class StepRotate extends Step {
 
     @Override
     public void execute() {
-        mFlow.getTimerTextView().setText(R.string.rotate);
+        mFlow.getTimerTextView().animateText(mFlow.getContext().getString(R.string.rotate));
     }
 }
