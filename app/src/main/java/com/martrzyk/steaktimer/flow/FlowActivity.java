@@ -38,7 +38,7 @@ public class FlowActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        FlowFragment fragment = (FlowFragment)getSupportFragmentManager().findFragmentById(R.id.main_fragment);
+        FlowFragment fragment = (FlowFragment) getSupportFragmentManager().findFragmentById(R.id.main_fragment);
         fragment.loadEndTextAnimation();
 
         super.onBackPressed();

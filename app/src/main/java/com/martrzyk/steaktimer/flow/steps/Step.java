@@ -7,9 +7,8 @@ import android.os.Handler;
 
 import com.martrzyk.steaktimer.flow.CookingFlow;
 
-/**
- * Created by Marek on 2016-08-21.
- */
+import lombok.experimental.Builder;
+
 public abstract class Step implements StepInterface {
     public int id;
     public long donenessId;
@@ -30,8 +29,9 @@ public abstract class Step implements StepInterface {
     }
 
     @Override
-    public void finishExecution() {
-        callNotifcation();
+    public void finishExecution(boolean forced) {
+        if(!forced)
+            callNotifcation();
     }
 
     @Override

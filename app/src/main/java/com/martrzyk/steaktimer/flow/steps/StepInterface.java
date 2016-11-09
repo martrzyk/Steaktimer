@@ -7,7 +7,7 @@ import com.martrzyk.steaktimer.flow.CookingFlow;
  */
 public interface StepInterface {
     void execute();
-    void finishExecution();
+    void finishExecution(boolean forced);
     void preExecute();
     void setFlow(CookingFlow flow);
 }

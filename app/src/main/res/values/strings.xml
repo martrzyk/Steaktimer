@@ -10,6 +10,7 @@
     <string name="medium_rare">Medium rare</string>
     <string name="medium">Medium</string>
     <string name="well_done">Well done</string>
+    <string name="test">test</string>
 
     <string name="empty">no data</string>
     <string name="title_activity_flow">FlowActivity</string>
@@ -29,6 +30,7 @@
         <item>@string/medium_rare</item>
         <item>@string/medium</item>
         <item>@string/well_done</item>
+        <item>@string/test</item>
     </string-array>
 
     <string-array name="meat_type">

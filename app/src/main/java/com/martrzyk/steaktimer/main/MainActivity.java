@@ -24,9 +24,4 @@ public class MainActivity extends AppCompatActivity {
     protected void bindActionBar() {
         setSupportActionBar(toolbar);
     }
-
-    public static Intent intentCreator(Context context) {
-        Intent i = new Intent(context, MainActivity.class);
-        return i;
-    }
 }

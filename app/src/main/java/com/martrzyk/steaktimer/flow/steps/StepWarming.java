@@ -33,7 +33,7 @@ public class StepWarming extends Step {
                 if (millis > 100)
                     timerHandler.postDelayed(this, 16); //we assume that refresh rate is at most 60fps which means 16ms per frame - no point of refreshing more often
                 else
-                    finishExecution();
+                    finishExecution(false);
             }
         };
 
@@ -42,8 +42,8 @@ public class StepWarming extends Step {
     }
 
     @Override
-    public void finishExecution() {
-        super.finishExecution();
+    public void finishExecution(boolean forced) {
+        super.finishExecution(forced);
 
         timerHandler.removeCallbacks(timerRunnable);
     }

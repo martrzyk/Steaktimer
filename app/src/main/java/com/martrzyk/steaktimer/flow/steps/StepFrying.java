@@ -5,10 +5,9 @@ import com.martrzyk.steaktimer.R;
 
 import java.util.Locale;
 
-/**
- *
- * Created by Marek on 2016-08-21.
- */
+import lombok.experimental.Builder;
+
+@Builder
 public class StepFrying extends Step {
 
     public StepFrying() {
@@ -27,10 +26,10 @@ public class StepFrying extends Step {
 
                 mFlow.getTimerTextView().animateText(String.format(Locale.getDefault(), "%d : %02d", minutes, seconds));
 
-                if(millis > 100)
+                if (millis > 100)
                     timerHandler.postDelayed(this, 16); //we assume that refreshrate is at least 60fps which means 16ms per frame - no point of refreshing more often
                 else
-                    finishExecution();
+                    finishExecution(false);
             }
         };
 
@@ -39,18 +38,26 @@ public class StepFrying extends Step {
     }
 
     @Override
-    public void finishExecution() {
-        super.finishExecution();
+    public void finishExecution(boolean forced) {
+        super.finishExecution(forced);
 
         timerHandler.removeCallbacks(timerRunnable);
     }
 
     @Override
     public Long getTiming() {
-        if(donenessId == R.string.rare){ return 60L; }
-        else if(donenessId == R.string.medium_rare){ return 90L; }
-        else if(donenessId == R.string.medium){ return 120L; }
-        else if(donenessId == R.string.well_done){ return 150L; }
-        else return 60L;
+        if (donenessId == R.string.rare) {
+            return 60L;
+        } else if (donenessId == R.string.medium_rare) {
+            return 90L;
+        } else if (donenessId == R.string.medium) {
+            return 120L;
+        } else if (donenessId == R.string.well_done) {
+            return 150L;
+        } else if (donenessId == R.string.test) {
+            return 5L;
+        } else {
+            return 60L;
+        }
     }
 }

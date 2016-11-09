@@ -6,6 +6,7 @@ import android.support.v4.content.ContextCompat;
 import com.anton46.stepsview.StepsView;
 import com.hanks.htextview.HTextView;
 import com.martrzyk.steaktimer.R;
+import com.martrzyk.steaktimer.flow.steps.Step;
 import com.martrzyk.steaktimer.flow.steps.StepFrying;
 import com.martrzyk.steaktimer.flow.steps.StepResting;
 import com.martrzyk.steaktimer.flow.steps.StepRotate;
@@ -16,6 +17,14 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+
+import lombok.val;
 
 @EFragment(R.layout.fragment_flow)
 public class FlowFragment extends Fragment {
@@ -33,7 +42,7 @@ public class FlowFragment extends Fragment {
     @Click(R.id.timer_tv)
     void onTimeClick() {
         cookingSteps.moveToNextStep();
-        cookingSteps.executeStep(false);
+        cookingSteps.executeStep(true);
     }
 
     @AfterViews
@@ -47,22 +56,27 @@ public class FlowFragment extends Fragment {
 
     @AfterViews
     void setupSteps() {
-        cookingSteps =
-                new CookingFlow
-                        .CookingFlowBuilder(getActivity())
-                        .addSteps(
-                                new StepWarming(),
-                                new StepFrying(),
-                                new StepRotate(),
-                                new StepFrying(),
-                                new StepResting(),
-                                new StepServing())
-                        .setOptions(mDoneness, mType)
-                        .setStepView(mStepsView)
-                        .setTimerTextView(mTimerView)
-                        .setInformationTextView(null)
-                        .build();
 
+        Step[] steps = {
+                new StepWarming(),
+                new StepFrying(),
+                new StepRotate(),
+                new StepFrying(),
+                new StepResting(),
+                new StepServing()
+        };
+
+        cookingSteps =
+                CookingFlow
+                        .builder()
+                        .context(getActivity())
+                        .steps(new ArrayList<>(Arrays.asList(steps)))
+                        .donenessId(mDoneness)
+                        .typeId(mType)
+                        .stepView(mStepsView)
+                        .timerTextView(mTimerView)
+                        .otherTextView(null)
+                        .build();
     }
 
     @AfterViews
@@ -70,7 +84,8 @@ public class FlowFragment extends Fragment {
         if (mStepsView == null)
             return;
 
-        mStepsView.setLabels(cookingSteps.getStepsLabels(getActivity()))
+        mStepsView
+                .setLabels(cookingSteps.getStepsLabels(getActivity()))
                 .setBarColorIndicator(ContextCompat.getColor(getActivity(), R.color.material_blue_grey_800))
                 .setProgressColorIndicator(ContextCompat.getColor(getActivity(), R.color.orange))
                 .setLabelColorIndicator(ContextCompat.getColor(getActivity(), R.color.orange))
